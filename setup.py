@@ -33,21 +33,37 @@ version = meta['version']
 # specified here to avoid masking the more specific request requirements in
 # acme. See https://github.com/pypa/pip/issues/988 for more info.
 install_requires = [
-    'acme>0.24.0',
-    # We technically need ConfigArgParse 0.10.0 for Python 2.6 support, but
-    # saying so here causes a runtime error against our temporary fork of 0.9.3
-    # in which we added 2.6 support (see #2243), so we relax the requirement.
-    'ConfigArgParse>=0.9.3',
-    'configobj',
-    'cryptography>=1.2',  # load_pem_x509_certificate
-    'josepy',
-    'mock',
-    'parsedatetime>=1.3',  # Calendar.parseDT
-    'pyrfc3339',
-    'pytz',
-    'setuptools',
-    'zope.component',
-    'zope.interface',
+    'acme==0.25.0',
+    'asn1crypto==0.24.0',
+    'certbot==0.25.0',
+    'certifi==2018.4.16',
+    'cffi==1.11.5',
+    'chardet==3.0.4',
+    'ConfigArgParse==0.13.0',
+    'configobj==5.0.6',
+    'cryptography==2.2.2',
+    'enum34==1.1.6',
+    'funcsigs==1.0.2',
+    'future==0.16.0',
+    'idna==2.6',
+    'ipaddress==1.0.22',
+    'josepy==1.1.0',
+    'mock==2.0.0',
+    'parsedatetime==2.4',
+    'pbr==4.0.4',
+    'pycparser==2.18',
+    'pyOpenSSL==18.0.0',
+    'pyRFC3339==1.1',
+    'pytz==2018.4',
+    'requests==2.18.4',
+    'requests-toolbelt==0.8.0',
+    'setuptools==39.2.0',
+    'six==1.11.0',
+    'urllib3==1.22',
+    'wheel==0.31.1',
+    'zope.component==4.4.1',
+    'zope.event==4.3.0',
+    'zope.interface==4.5.0'
 ]
 
 dev_extras = [

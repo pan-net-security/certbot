@@ -7,12 +7,12 @@ version = '0.25.0'
 # Remember to update local-oldest-requirements.txt when changing the minimum
 # acme/certbot version.
 install_requires = [
-    'acme>=0.21.1',
-    'certbot>=0.21.1',
-    'dnspython',
-    'mock',
-    'setuptools',
-    'zope.interface',
+    'acme==0.25.0',
+    'certbot==0.25.0',
+    'dnspython==1.15.0',
+    'mock==1.15.0',
+    'setuptools==39.2.0',
+    'zope.interface==4.5.0'
 ]
 
 docs_extras = [
